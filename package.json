@@ -1,0 +1,45 @@
+{
+  "name": "ReactNativeHMS",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "npx react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@hmscore/react-native-hms-ads": "^13.4.32-300",
+    "@hmscore/react-native-hms-analytics": "^5.0.3-300",
+    "@hmscore/react-native-hms-dtm": "^5.0.2-300",
+    "@hmscore/react-native-hms-location": "^5.0.0-301",
+    "@hmscore/react-native-hms-map": "^5.0.3-302",
+    "@react-native-community/async-storage": "^1.12.1",
+    "@react-native-community/masked-view": "^0.1.10",
+    "@react-navigation/native": "^5.8.6",
+    "@react-navigation/stack": "^5.12.3",
+    "react": "16.13.1",
+    "react-native": "0.63.3",
+    "react-native-background-fetch": "^3.1.0",
+    "react-native-background-job": "^2.3.1",
+    "react-native-gesture-handler": "^1.8.0",
+    "react-native-permissions": "^2.2.2",
+    "react-native-reanimated": "^1.13.1",
+    "react-native-safe-area-context": "^3.1.8",
+    "react-native-screens": "^2.13.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/runtime": "^7.8.4",
+    "@react-native-community/eslint-config": "^1.1.0",
+    "babel-jest": "^25.1.0",
+    "eslint": "^6.5.1",
+    "jest": "^25.1.0",
+    "metro-react-native-babel-preset": "^0.59.0",
+    "react-test-renderer": "16.13.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
