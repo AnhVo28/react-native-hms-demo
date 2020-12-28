@@ -86,6 +86,46 @@ const HomeComponent = ({ navigation }) => {
                     onPress={() => navigation.navigate('MapDemo')}
                     />
                 </TouchableOpacity>
+
+
+                <TouchableOpacity 
+                    style={styles.button}
+                >
+                   <Button 
+                    title="Go to DTM"
+                    onPress={() => navigation.navigate('DTM')}
+                    />
+                </TouchableOpacity>
+
+                <TouchableOpacity 
+                    style={styles.button}
+                >
+                   <Button 
+                    title="Go to Site"
+                    onPress={() => navigation.navigate('Site')}
+                    />
+                </TouchableOpacity>
+
+                <TouchableOpacity 
+                    style={styles.button}
+                >
+                   <Button 
+                    title="Go to Push "
+                    onPress={() => navigation.navigate('Push')}
+                    />
+                </TouchableOpacity>
+                
+
+                <TouchableOpacity 
+                    style={styles.button}
+                >
+                   <Button 
+                    title="Go to Push Demo"
+                    onPress={() => navigation.navigate('PushDemo')}
+                    />
+                </TouchableOpacity>
+                
+                
                 
 
 

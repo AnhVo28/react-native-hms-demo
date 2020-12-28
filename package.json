@@ -15,6 +15,7 @@
     "@hmscore/react-native-hms-dtm": "^5.0.2-300",
     "@hmscore/react-native-hms-location": "^5.0.0-301",
     "@hmscore/react-native-hms-map": "^5.0.3-302",
+    "@hmscore/react-native-hms-push": "^5.0.2-301",
     "@react-native-community/async-storage": "^1.12.1",
     "@react-native-community/masked-view": "^0.1.10",
     "@react-navigation/native": "^5.8.6",
@@ -27,7 +28,7 @@
     "react-native-permissions": "^2.2.2",
     "react-native-reanimated": "^1.13.1",
     "react-native-safe-area-context": "^3.1.8",
-    "react-native-screens": "^2.13.0"
+    "react-native-screens": "^2.15.0"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",

@@ -792,6 +792,11 @@
   resolved "https://registry.yarnpkg.com/@hmscore/react-native-hms-map/-/react-native-hms-map-5.0.3-302.tgz#a2d83a91af2f5233d1a02ccdf0b889467a44b157"
   integrity sha512-TbBWMBqQJVLPOVNmUkGrOtvvV2Pi1UE1LzIXNxpz0iM/hGFdn0+zSxdt5axrlWOb9ugHL2KSZHJBdVOO9Y29zQ==
 
+"@hmscore/react-native-hms-push@^5.0.2-301":
+  version "5.0.2-301"
+  resolved "https://registry.yarnpkg.com/@hmscore/react-native-hms-push/-/react-native-hms-push-5.0.2-301.tgz#a1b5ba1e5b3118c4fb277b11c9fafab0d9f8e978"
+  integrity sha512-vLlb0cvYO4iLHZ1kSG28PTaMnrqQBhUqPPnOVtu7TWFFGGP2X1CMcBRkKSYzXJqs4354vzOws7V4UIcPpC+eYQ==
+
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@istanbuljs/load-nyc-config/-/load-nyc-config-1.1.0.tgz#fd3db1d59ecf7cf121e80650bb86712f9b55eced"
@@ -5700,7 +5705,7 @@ react-native-safe-area-context@^3.1.8:
   resolved "https://registry.yarnpkg.com/react-native-safe-area-context/-/react-native-safe-area-context-3.1.9.tgz#48864ea976b0fa57142a2cc523e1fd3314e7247e"
   integrity sha512-wmcGbdyE/vBSL5IjDPReoJUEqxkZsywZw5gPwsVUV1NBpw5eTIdnL6Y0uNKHE25Z661moxPHQz6kwAkYQyorxA==
 
-react-native-screens@^2.13.0:
+react-native-screens@^2.15.0:
   version "2.15.0"
   resolved "https://registry.yarnpkg.com/react-native-screens/-/react-native-screens-2.15.0.tgz#9b97c1881c4fcdf304bf363f0013225901625f44"
   integrity sha512-qTSQPy0WKHtlb8xt5gY0Gt6sdvfQUQAnFSqgsggW9UEvySbkHzpqOrOYNA79Ca8oXO0dCFwp6X8buIiDefa7+Q==

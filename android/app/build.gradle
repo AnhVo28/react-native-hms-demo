@@ -192,6 +192,7 @@ dependencies {
     //noinspection GradleDynamicVersion
     implementation "com.facebook.react:react-native:+"  // From node_modules
     implementation project(':react-native-background-job')
+    implementation project(":react-native-hms-site")
 
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
 
