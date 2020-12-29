@@ -12,28 +12,6 @@ import {
   HmsPushEvent,
 } from "@hmscore/react-native-hms-push";
 
-import BackgroundFetch from 'react-native-background-fetch';
-
-
-
-
-
-const MyHeadlessTask = async () => {
-    console.log('Receiving LocationUpdate!');
-    
-    try {
-      await requestLocationUpdate()
-      /* const result = await HMSLocation.FusedLocation.Native.getLastLocation()
-      console.log('result: ', result); */
-    }
-    catch (err){
-      console.log('fetch failed', err);
-    }
-   /*  requestLocationUpdate();
-    HMSLocation.FusedLocation.Events.addFusedLocationEventListener(handleLocationUpdate); */
-   
-
-  }
 
   HmsPushEvent.onNotificationOpenedApp((result) => {
     console.log("onNotificationOpenedApp", result);
@@ -65,6 +43,5 @@ const MyHeadlessTask = async () => {
 
 AppRegistry.registerComponent(appName, () => App);
 
-AppRegistry.registerHeadlessTask('LocationUpdate', () => MyHeadlessTask);
 
 

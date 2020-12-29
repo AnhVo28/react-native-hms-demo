@@ -18,7 +18,3 @@
 -keep class com.huawei.updatesdk.**{*;}
 -keep class com.huawei.hms.**{*;}
 
-# [react-native-background-fetch]
--keep class com.transistorsoft.rnbackgroundfetch.HeadlessTask { *; }
-
--keep class com.huawei.hms.**{*;}

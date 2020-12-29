@@ -116,14 +116,14 @@ const HomeComponent = ({ navigation }) => {
                 </TouchableOpacity>
                 
 
-                <TouchableOpacity 
+               {/*  <TouchableOpacity 
                     style={styles.button}
                 >
                    <Button 
                     title="Go to Push Demo"
                     onPress={() => navigation.navigate('PushDemo')}
                     />
-                </TouchableOpacity>
+                </TouchableOpacity> */}
                 
                 
                 

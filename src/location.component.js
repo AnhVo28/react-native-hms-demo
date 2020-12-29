@@ -17,92 +17,13 @@ import { Colors } from 'react-native/Libraries/NewAppScreen';
 import {openSettings} from 'react-native-permissions';
 
 import HMSLocation from '@hmscore/react-native-hms-location';
-import LocationUpdate from '../LocationUpdate';
 
-import BackgroundFetch, { BackgroundFetchStatus } from 'react-native-background-fetch';
 
-/// Execute a BackgroundFetch.scheduleTask
-///
-export const scheduleTask = async (name) => {
-  try {
-    await BackgroundFetch.scheduleTask({
-      taskId: name,
-      stopOnTerminate: false,
-      enableHeadless: true,
-      delay: 5000,               // milliseconds (5s)
-      forceAlarmManager: true,   // more precise timing with AlarmManager vs default JobScheduler
-      periodic: false            // Fire once only.
-    });
-  } catch (e) {
-    console.warn('[BackgroundFetch] scheduleTask fail', e);
-  }
-}
-  
+
+
+
 
 const LocationComponent = () => {
-
-    const init = ()=>{
-      BackgroundFetch.configure({
-        minimumFetchInterval: 15,     // <-- minutes (15 is minimum allowed)
-        // Android options
-        forceAlarmManager: false,     // <-- Set true to bypass JobScheduler.
-        stopOnTerminate: false,
-        startOnBoot: true,
-        requiredNetworkType: BackgroundFetch.NETWORK_TYPE_NONE, // Default
-        requiresCharging: false,      // Default
-        requiresDeviceIdle: false,    // Default
-        requiresBatteryNotLow: false, // Default
-        requiresStorageNotLow: false  // Default
-      }, async (taskId) => {
-        console.log("[js] Received background-fetch event: ", taskId);
-
-        // Use a switch statement to route task-handling.
-        switch (taskId) {
-          case 'com.foo.customtask':
-            console.log("Received custom task");
-            try {
-              const result = await HMSLocation.FusedLocation.Native.getLastLocation()
-              console.log('result: ', result);
-            }
-            catch (err){
-              console.log('fetch failed', err);
-            }
-            break;
-          default:
-            console.log("Default fetch task");
-        }
-        // Required: Signal completion of your task to native code
-        // If you fail to do this, the OS can terminate your app
-        // or assign battery-blame for consuming too much background-time
-        BackgroundFetch.finish(taskId);
-      }, (error) => {
-        console.log("[js] RNBackgroundFetch failed to start");
-      });
-  
-      // Optional: Query the authorization status.
-      BackgroundFetch.status((status) => {
-        switch(status) {
-          case BackgroundFetch.STATUS_RESTRICTED:
-            console.log("BackgroundFetch restricted");
-            break;
-          case BackgroundFetch.STATUS_DENIED:
-            console.log("BackgroundFetch denied");
-            break;
-          case BackgroundFetch.STATUS_AVAILABLE:
-            console.log("BackgroundFetch is enabled");
-            break;
-        }
-      });
-    }
-
-    useEffect(() => {
-      init();
-    }, []);
-
-    
-  
-    
-
     return (
         <>
           <SafeAreaView>
@@ -438,12 +359,6 @@ const LocationInfo = () => {
               </Text>
             </View>
             <View style={styles.centralizeContent}>
-            <TouchableOpacity style={styles.button} onPress={() => LocationUpdate.startService()}>
-                <Text style={styles.instructions}>Start</Text>
-          </TouchableOpacity>
-          <TouchableOpacity style={styles.button} onPress={() => LocationUpdate.stopService()}>
-          <Text style={styles.instructions}>Stop</Text>
-        </TouchableOpacity>
 
       {/*   <Button title='Start bg fetch'
           onPress={()=>{
