@@ -18,7 +18,10 @@ Install libs in react native
     ```
     yarn install
     ```
-    
+
+since react-native-hms-site could not be installed via npm. Please follow this link to download and add plugin into node_modules/@hmscore
+
+https://www.npmjs.com/package/@hmscore/react-native-hms-site    
 
 then run the app
 
