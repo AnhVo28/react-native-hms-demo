@@ -10,7 +10,7 @@ import MapDemo from './src/mapDemo.component';
 import { enableScreens } from 'react-native-screens';
 import { createNativeStackNavigator } from 'react-native-screens/native-stack';
 import DtmComponent from './src/dtm.component';
-import SiteComponent from './src/site.component';
+/* import SiteComponent from './src/site.component'; */
 import PushMainPage from './src/push/MainPage'
 import CustomURI from './src/push/CustomURI'
 import LocalNotification from './src/push/LocalNotification'
@@ -48,7 +48,7 @@ const Routes = ()=> {
           <Stack.Screen name="Map" component={MapComponent} />
           <Stack.Screen name="MapDemo" component={MapDemo} />
           <Stack.Screen name="DTM" component={DtmComponent} />
-          <Stack.Screen name="Site" component={SiteComponent} />
+        {/*   <Stack.Screen name="Site" component={SiteComponent} /> */}
           <Stack.Screen name="Push" component={PushComponent} />
           <Stack.Screen name="PushDemo"  options={{ headerShown: false }} component={PushDemo} />
         </Stack.Navigator>
