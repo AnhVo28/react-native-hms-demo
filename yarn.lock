@@ -797,6 +797,11 @@
   resolved "https://registry.yarnpkg.com/@hmscore/react-native-hms-push/-/react-native-hms-push-5.0.2-301.tgz#a1b5ba1e5b3118c4fb277b11c9fafab0d9f8e978"
   integrity sha512-vLlb0cvYO4iLHZ1kSG28PTaMnrqQBhUqPPnOVtu7TWFFGGP2X1CMcBRkKSYzXJqs4354vzOws7V4UIcPpC+eYQ==
 
+"@hmscore/react-native-hms-scan@^1.2.2-300-01":
+  version "1.2.2-300-01"
+  resolved "https://registry.yarnpkg.com/@hmscore/react-native-hms-scan/-/react-native-hms-scan-1.2.2-300-01.tgz#cd7e42df46e1390bb248a8fc1c61847ce5ab6493"
+  integrity sha512-cL15icj5HCotaROz0I+EvukQWheAVFP8Nlb2I6UmFSSarqm1FEFiFGlQxpKuom/FNsjuvnMqtucq+i7md8EwoA==
+
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@istanbuljs/load-nyc-config/-/load-nyc-config-1.1.0.tgz#fd3db1d59ecf7cf121e80650bb86712f9b55eced"

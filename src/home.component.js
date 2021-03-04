@@ -124,6 +124,34 @@ const HomeComponent = ({ navigation }) => {
                     onPress={() => navigation.navigate('PushDemo')}
                     />
                 </TouchableOpacity> */}
+
+
+                <TouchableOpacity 
+                    style={styles.button}
+                >
+                   <Button 
+                    title="Go to Nearby "
+                    onPress={() => navigation.navigate('Nearby')}
+                    />
+                </TouchableOpacity>
+
+                <TouchableOpacity 
+                    style={styles.button}
+                >
+                   <Button 
+                    title="Go to Nearby Demo "
+                    onPress={() => navigation.navigate('NearbyDemo')}
+                    />
+                </TouchableOpacity>
+
+                <TouchableOpacity 
+                    style={styles.button}
+                >
+                   <Button 
+                    title="Go to Scan "
+                    onPress={() => navigation.navigate('Scan')}
+                    />
+                </TouchableOpacity>
                 
                 
                 

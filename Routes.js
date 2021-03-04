@@ -15,14 +15,23 @@ import PushMainPage from './src/push/MainPage'
 import CustomURI from './src/push/CustomURI'
 import LocalNotification from './src/push/LocalNotification'
 import PushComponent from './src/push.component';
+/* import Connection from './src/nearby/Connection'
+import Message from './src/nearby/Message'
+import StartPage from './src/nearby/StartPage'
+import Wifi from './src/nearby/Wifi'
+import NearbyComponent from './src/nearby.component'; */
+import ScanComponent from './src/scan.component'
+/* import MLComponent from './src/ml.component' */
 
 
+
+/* 
 enableScreens();
 const Stack = createNativeStackNavigator();
-const NestedStack = createStackNavigator()
+const NestedStack = createStackNavigator() */
 
 
-/* const Stack = createStackNavigator(); */
+const Stack = createStackNavigator();
 
 const Routes = ()=> {
     return (
@@ -51,6 +60,10 @@ const Routes = ()=> {
         {/*   <Stack.Screen name="Site" component={SiteComponent} /> */}
           <Stack.Screen name="Push" component={PushComponent} />
           <Stack.Screen name="PushDemo"  options={{ headerShown: false }} component={PushDemo} />
+         {/*  <Stack.Screen name="Nearby" component={NearbyComponent} />
+          <Stack.Screen name="NearbyDemo"  options={{ headerShown: false }} component={NearbyDemo} /> */}
+          <Stack.Screen name="Scan"  options={{ headerShown: false }} component={ScanComponent} />
+     {/*      <Stack.Screen name="ML"  options={{ headerShown: false }} component={MLComponent} /> */}
         </Stack.Navigator>
       </NavigationContainer>
     );
@@ -67,4 +80,17 @@ const Routes = ()=> {
     </NestedStack.Navigator>
     )
   }
+
+
+  /* const NearbyDemo = ()=>{
+
+    return(
+      <NestedStack.Navigator>
+        <NestedStack.Screen name="NearbyMainPage" component={StartPage} />
+        <NestedStack.Screen name="Connection" component={Connection} />
+        <NestedStack.Screen name="Message" component={Message} />
+        <NestedStack.Screen name="Wifi" component={Wifi} />
+    </NestedStack.Navigator>
+    )
+  } */
 export default Routes;
