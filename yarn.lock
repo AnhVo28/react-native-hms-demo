@@ -767,15 +767,20 @@
   dependencies:
     "@hapi/hoek" "^8.3.0"
 
-"@hmscore/react-native-hms-ads@^13.4.32-300":
-  version "13.4.32-300-03"
-  resolved "https://registry.yarnpkg.com/@hmscore/react-native-hms-ads/-/react-native-hms-ads-13.4.32-300-03.tgz#71912131315873b80e6ae267e788f1c952b52668"
-  integrity sha512-rDqzO/lvugfAmnROrjZqybbwtTZVIm160cvB9Usqmav8+QpLXgxcHJziEoM3RZ0W5owsWdcG6NSqzVug5+sowg==
+"@hmscore/react-native-hms-ads@^13.4.40-302":
+  version "13.4.40-302"
+  resolved "https://registry.yarnpkg.com/@hmscore/react-native-hms-ads/-/react-native-hms-ads-13.4.40-302.tgz#8d3bfdab6a3a8dc4e8f7540f8adcbf625c30e60d"
+  integrity sha512-IPeuJExigYyAWxFHK0ZX8Sb0qmCCmDKqveJbnsMXm8PEA5b+aw6mHHGLioJv3JGtNADm7S+Apv+dXOQeIOlhhw==
 
 "@hmscore/react-native-hms-analytics@^5.0.3-300":
   version "5.0.3-300"
   resolved "https://registry.yarnpkg.com/@hmscore/react-native-hms-analytics/-/react-native-hms-analytics-5.0.3-300.tgz#c0062f971fa4e717426d31753e5acdcca8a3be44"
   integrity sha512-xt/llVhBLhJzRbos1z+zN4N96aXswuCJ1idZPLMKP24yUYcg/nGzeUl1jk7L6WGSJNy+JNkEeB6zIU9oNm1Zsg==
+
+"@hmscore/react-native-hms-availability@^5.2.0-300":
+  version "5.2.0-300"
+  resolved "https://registry.yarnpkg.com/@hmscore/react-native-hms-availability/-/react-native-hms-availability-5.2.0-300.tgz#fe2cd36ba8fb3ac84fffd9ab59a0a90166f4ea07"
+  integrity sha512-Rhg7DzCnO0QvF68NpPzpJTrCMRfjPPLDjZGvjSf9rTha59DZMWWf0OBjv3tOkbt9emHbtXeOH2P2CH37hwnPng==
 
 "@hmscore/react-native-hms-dtm@^5.0.2-300":
   version "5.0.2-300"

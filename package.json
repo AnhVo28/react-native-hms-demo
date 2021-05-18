@@ -10,8 +10,9 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@hmscore/react-native-hms-ads": "^13.4.32-300",
+    "@hmscore/react-native-hms-ads": "^13.4.40-302",
     "@hmscore/react-native-hms-analytics": "^5.0.3-300",
+    "@hmscore/react-native-hms-availability": "^5.2.0-300",
     "@hmscore/react-native-hms-dtm": "^5.0.2-300",
     "@hmscore/react-native-hms-location": "^5.0.0-301",
     "@hmscore/react-native-hms-map": "^5.0.3-302",
